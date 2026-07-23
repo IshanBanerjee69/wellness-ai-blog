@@ -33,126 +33,42 @@
       <p class="label">The premise</p>
       <div>
         <p class="lead">Artificial intelligence is no longer limited to chatbots and self-driving cars. Startups are now using AI to analyze selfies, examine hair strands, and even adjust weights while someone is exercising.</p>
-        <p>I researched three companies applying AI to health and wellness in very different ways: <strong>Haut.AI for skincare, MYAVANA for hair care, and Tonal for muscle building.</strong> Some of their technology seems genuinely useful, but none of it is perfect.</p>
+        <p>This growing field guide follows companies applying AI to health and wellness in very different ways. Some of the technology seems genuinely useful, but none of it is perfect.</p>
       </div>
     </section>
 
     <section class="startups" id="startups">
       <header class="section-head">
         <div>
-          <p class="label">Three field notes</p>
+          <p class="label"><span id="startup-count">Three</span> field notes</p>
           <h2>Meet the machines</h2>
         </div>
-        <div class="filters" aria-label="Filter articles">
-          <button class="active" data-filter="all">All</button>
-          <button data-filter="skin">Skin</button>
-          <button data-filter="hair">Hair</button>
-          <button data-filter="fitness">Fitness</button>
-        </div>
+        <div class="filters" id="filters" aria-label="Filter articles"></div>
       </header>
 
-      <div class="cards">
-        <article class="card coral" data-category="skin">
-          <aside><b>01</b><span>Skin</span><div class="rating"><strong>7</strong>/10<small>usefulness</small></div></aside>
-          <div class="article">
-            <p class="company">Haut.AI</p>
-            <h3>A skin analysis from a selfie</h3>
-            <blockquote>A useful shopping guide — not a dermatologist in your pocket.</blockquote>
-            <div class="columns">
-              <section>
-                <h4>01 · What it does</h4>
-                <p>Buying skincare can feel like guessing. Shelves are packed with cleansers, moisturizers, and serums, but it is difficult to know which product is right for you.</p>
-                <p>Haut.AI provides computer-vision software to beauty brands and retailers. A customer uploads a selfie, and the system analyzes visible features such as redness, pigmentation, blemishes, wrinkles, and skin texture. A recommendation system can then suggest products from the brand’s catalog.</p>
-              </section>
-              <section>
-                <h4>02 · How AI powers it</h4>
-                <p>The software identifies skin areas and separates them from hair, eyes, and the background. Machine-learning models search for patterns in the skin pixels and turn them into measurements and recommendations.</p>
-                <p>SkinGPT can also simulate what someone’s skin might look like after using a product. The result is an illustration, not a guaranteed prediction.</p>
-              </section>
-              <section>
-                <h4>03 · Is it useful?</h4>
-                <p>The analysis depends heavily on the selfie. Lighting, makeup, shadows, or a blurry camera can affect the result. A photograph also cannot explain the medical cause of a skin condition.</p>
-                <p>It could make online skincare shopping feel more personal and less random, but it should not replace a dermatologist or be treated as a diagnosis.</p>
-              </section>
-            </div>
-          </div>
-        </article>
-
-        <article class="card gold" data-category="hair">
-          <aside><b>02</b><span>Hair</span><div class="rating"><strong>8</strong>/10<small>usefulness</small></div></aside>
-          <div class="article">
-            <p class="company">MYAVANA</p>
-            <h3>A digital identity for your hair</h3>
-            <blockquote>The strongest idea here: a photo starts the story, but a strand tells more.</blockquote>
-            <div class="columns">
-              <section>
-                <h4>01 · What it does</h4>
-                <p>Hair differs in curl pattern, thickness, porosity, elasticity, damage, and moisture needs. MYAVANA builds a HairID: a detailed profile focused especially on textured and multicultural hair.</p>
-                <p>Users upload a photograph and answer questions about treatments, concerns, and goals. A deeper service lets customers mail physical hair strands for analysis.</p>
-              </section>
-              <section>
-                <h4>02 · How AI powers it</h4>
-                <p>Machine learning helps classify texture, type, and visible condition. Strand testing can add measurements such as porosity, elasticity, density, diameter, curl pattern, and damage.</p>
-                <p>The deeper analysis combines AI, laboratory measurements, product information, and human expertise. HairID then matches users with products, ingredients, and routines.</p>
-              </section>
-              <section>
-                <h4>03 · Is it useful?</h4>
-                <p>MYAVANA goes beyond a basic curl-type quiz by considering several characteristics at once. Its accuracy still depends on the quality of its training data and product database.</p>
-                <p>The combination of photos, strand testing, and personalized recommendations could be genuinely helpful. Sudden hair loss or scalp pain, however, still belongs with a medical professional.</p>
-              </section>
-            </div>
-          </div>
-        </article>
-
-        <article class="card blue" data-category="fitness">
-          <aside><b>03</b><span>Fitness</span><div class="rating"><strong>8</strong>/10<small>usefulness</small></div></aside>
-          <div class="article">
-            <p class="company">Tonal</p>
-            <h3>A weight machine that thinks while you lift</h3>
-            <blockquote>Here, AI does more than recommend — it changes the workout in real time.</blockquote>
-            <div class="columns">
-              <section>
-                <h4>01 · What it does</h4>
-                <p>Tonal is a wall-mounted exercise system that creates resistance electronically instead of using metal weight plates. Users pull cables while following guided workouts on a screen.</p>
-                <p>The system estimates strength and recommends resistance. Sensors track repetition speed, range of motion, cable movement, and previous performance.</p>
-              </section>
-              <section>
-                <h4>02 · How AI powers it</h4>
-                <p>If a user begins struggling, Spotter Mode can temporarily reduce resistance. Other modes change weight during parts of a movement or as the person becomes tired.</p>
-                <p>Camera-based movement analysis can estimate joint positions and compare a user’s movement with expected exercise form.</p>
-              </section>
-              <section>
-                <h4>03 · Is it useful?</h4>
-                <p>AI feels especially necessary here because it changes the workout while it is happening. A normal video cannot automatically lower the weight when a user struggles.</p>
-                <p>It is not the same as a skilled trainer, and it cannot fully understand pain, injury, or medical history. Its cost and need for wall space also limit access.</p>
-              </section>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div class="cards" id="startup-cards"></div>
     </section>
 
     <section class="compare">
       <p class="label">At a glance</p>
       <div class="table">
         <div class="row headings"><span>Startup</span><span>Reads</span><span>Best use</span><span>Score</span></div>
-        <div class="row"><strong>Haut.AI</strong><span>Selfie pixels</span><span>Narrowing product choices</span><strong>7/10</strong></div>
-        <div class="row"><strong>MYAVANA</strong><span>Photos + strands</span><span>Building a tailored routine</span><strong>8/10</strong></div>
-        <div class="row"><strong>Tonal</strong><span>Motion + performance</span><span>Adaptive resistance</span><strong>8/10</strong></div>
+        <div id="comparison-rows"></div>
       </div>
     </section>
 
     <section class="verdict" id="verdict">
       <p class="label">Our verdict</p>
       <div class="verdict-grid">
-        <div><small>Most interesting</small><h2>MYAVANA</h2><strong class="big-score">8<span>/10</span></strong></div>
-        <div><p class="lead">HairID is easy to understand, tackles a familiar problem, and focuses on hair types that beauty technology has often overlooked.</p><p>Most importantly, MYAVANA combines AI with actual strand testing instead of pretending that one photograph can reveal everything.</p></div>
+        <div><small>Most interesting</small><h2 id="featured-name"></h2><strong class="big-score"><b id="featured-score-number"></b><span>/10</span></strong></div>
+        <div id="featured-copy"></div>
       </div>
       <p class="closing">The real question is not whether a product <em>contains</em> AI.<br>It is whether the AI makes the product meaningfully more useful.</p>
     </section>
   </main>
 
   <footer><a class="brand" href="#top"><span>WI</span> Wellness Intelligence</a><p>Clear eyes on artificial intelligence in everyday health.</p><a href="#top">Back to top ↑</a></footer>
+  <script src="startups.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -14,3 +14,7 @@
   line-height: 1;
   letter-spacing: 0;
 }
+
+.big-score b {
+  font: inherit;
+}
