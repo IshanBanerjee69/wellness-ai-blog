@@ -1,0 +1,16 @@
+.big-score {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  width: max-content;
+  margin-top: 22px;
+  font: 600 68px/1 "DM Sans", sans-serif;
+  letter-spacing: -0.06em;
+}
+
+.big-score span {
+  color: #cbd5d0;
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: 0;
+}
