@@ -13,6 +13,7 @@
 window.STARTUPS = [
   {
     name: "Haut.AI",
+    website: "https://haut.ai/",
     category: "Skin",
     accent: "coral",
     title: "A skin analysis from a selfie",
@@ -36,6 +37,7 @@ window.STARTUPS = [
   },
   {
     name: "MYAVANA",
+    website: "https://www.myavana.com/",
     category: "Hair",
     accent: "gold",
     title: "A digital identity for your hair",
@@ -61,6 +63,7 @@ window.STARTUPS = [
   },
   {
     name: "Tonal",
+    website: "https://tonal.com/",
     category: "Fitness",
     accent: "blue",
     title: "A weight machine that thinks while you lift",

@@ -5,7 +5,7 @@ All startup content lives in `startups.js`. The layout is generated automaticall
 1. Open `startups.js`.
 2. Copy one complete startup block, beginning with `{` and ending with `},`.
 3. Paste the copy before the final `];`.
-4. Replace its name, category, title, rating, short comparison details, and paragraphs.
+4. Replace its name, official website, category, title, rating, short comparison details, and paragraphs.
 5. Save and publish the changes.
 
 The site automatically updates:

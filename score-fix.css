@@ -18,3 +18,24 @@
 .big-score b {
   font: inherit;
 }
+
+.website-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid currentColor;
+  font: 700 12px "DM Sans", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.website-link span {
+  font-size: 15px;
+  transition: transform 0.2s ease;
+}
+
+.website-link:hover span {
+  transform: translate(3px, -3px);
+}

@@ -24,6 +24,9 @@ function renderCard(startup, index) {
       <div class="article">
         <p class="company">${startup.name}</p>
         <h3>${startup.title}</h3>
+        <a class="website-link" href="${startup.website}" target="_blank" rel="noopener noreferrer">
+          Visit ${startup.name} <span aria-hidden="true">↗</span>
+        </a>
         <blockquote>${startup.pullQuote}</blockquote>
         <div class="columns">
           <section><h4>01 · What it does</h4>${paragraphs(startup.whatItDoes)}</section>
