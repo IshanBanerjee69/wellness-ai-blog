@@ -39,3 +39,34 @@
 .website-link:hover span {
   transform: translate(3px, -3px);
 }
+
+.project-note {
+  margin: 42px 0 30px;
+  padding: 30px 32px 24px;
+  border-left: 4px solid var(--coral);
+  background: rgba(255, 253, 247, 0.72);
+}
+
+.project-note-label {
+  margin-bottom: 14px;
+  font: 700 11px "DM Sans", sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.project-note p:not(.project-note-label) {
+  max-width: 760px;
+  color: #46534e;
+}
+
+.intro-summary {
+  max-width: 700px;
+  color: #64706a;
+}
+
+@media (max-width: 600px) {
+  .project-note {
+    margin-top: 30px;
+    padding: 24px 22px 18px;
+  }
+}
